@@ -9,11 +9,11 @@ const styles = {
 export default function Home() {
   return (
     <div >
-      <h1>Home</h1>
+      <h1>Contact me</h1>
       <p style={styles.container}>
           I am Josh.
       </p>
-      <div />
+      
     </div>
   );
 }
