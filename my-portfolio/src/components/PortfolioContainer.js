@@ -6,11 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Works from './pages/Works';
 
-const styles = {
-    main: {
-        backgroundColor: 'Spanish Violet',
-    },
-};
+
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -31,16 +27,16 @@ export default function PortfolioContainer() {
 
     return (
         <>
-        <div style={styles.background}>
-            <Header style={styles.background} />
+            <div>
+                <Header />
 
-            <div className="container">
-                <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} style={styles.background} />
-                {renderPage()}
+                <div className="container">
+                    <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+                    {renderPage()}
+                </div>
+
             </div>
-
-        </div>
-        <Footer/>
+            <Footer />
         </>
     );
 }

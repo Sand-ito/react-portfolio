@@ -6,9 +6,6 @@ const styles = {
         textAlign: 'center',
         color: 'Spanish Violet',
     },
-    headingStyle: {
-        background: 'Spanish Violet',
-    },
 };
 
 export default function Header() {

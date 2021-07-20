@@ -1,5 +1,11 @@
 import React from 'react';
 
+const styles = {
+  container: {
+      height: "43vh",  
+  },
+};
+
 export default function About() {
   return (
     <div>
@@ -16,10 +22,10 @@ export default function About() {
           Most of these jobs were to mainly allow me to be a ski and whitewater bum. But I have had my fill of fun
           and now I want to persue a career. I was at the right place and right time to hear about a coding boot camp. I am really
           enjoying the progression of the class at the moment. I also am happy to be in a career path that
-          requires even more learning after. <a className="resume" href="./docs/Resume.pdf" target="_blank">Here is a link to view my Resume.</a>
+          requires even more learning after.
         </p>
 
-        <p className="me-text">
+        <p className="me-text" style={styles.container}>
           Thank you for taking your time to read and interact with my portfolio. It means a lot to me. Have a nice
           day.
         </p>

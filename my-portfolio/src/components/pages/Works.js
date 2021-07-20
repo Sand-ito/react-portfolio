@@ -4,21 +4,29 @@ export default function Works() {
   return (
     <div>
       <h1>Works</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <nav className="column">
+            <div>
+                <div className="container">
+                    <a href="https://sand-ito.github.io/password-generator/" className="box1 column">
+                        <div>Password Generator</div>
+                        <img src='images/password-gen.jpg'/>
+                    </a>
+                    <li><a href="https://github.com/Sand-ito/password-generator">Repo: Password Gen.</a></li>
+                    <a href="https://sand-ito.github.io/day-planner/" className="box2 column">
+                        <div>Day Planner</div>
+                        <img src='images/day-planner.jpg'/>
+                    </a>
+                    <li><a href="https://github.com/Sand-ito/day-planner">Repo: Day Planner</a></li>
+                </div>
+                <a href="https://huirayj.github.io/random-meal-generator/" className="box3 column">
+                    <div>Group project, Random Meal Generator</div>
+                    <img src='images/rmg-proj.jpg'/>
+                </a>
+                <ul className="container">
+                    <li><a href="https://github.com/huirayj/random-meal-generator">Repo: Meal Gen</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
   );
 }
