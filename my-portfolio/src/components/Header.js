@@ -1,10 +1,21 @@
 import React from 'react';
 
-export default function Blog() {
+const styles = {
+    headerStyle: {
+        fontSize: '100px',
+        textAlign: 'center',
+        color: 'Spanish Violet',
+    },
+    headingStyle: {
+        background: 'Spanish Violet',
+    },
+};
+
+export default function Header() {
     return (
-      <header>
-        <h1>Joshua Livak</h1>
-        
-      </header>
+        <header style={styles.headingStyle}>
+            <h1 style={styles.headerStyle}>Joshua Livak</h1>
+
+        </header>
     );
-  }
+}

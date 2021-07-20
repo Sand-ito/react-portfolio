@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import NavTabs from './NavTabs';
+import Footer from './Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Works from './pages/Works';
+
+const styles = {
+    main: {
+        backgroundColor: 'Spanish Violet',
+    },
+};
 
 export default function PortfolioContainer() {
     const [currentPage, setCurrentPage] = useState('Home');
@@ -15,7 +22,7 @@ export default function PortfolioContainer() {
         if (currentPage === 'About') {
             return <About />;
         }
-        if (currentPage === 'Blog') {
+        if (currentPage === 'Works') {
             return <Works />;
         }
     };
@@ -23,15 +30,17 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <body>
-            <Header/>
+        <>
+        <div style={styles.background}>
+            <Header style={styles.background} />
 
             <div className="container">
-                <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+                <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} style={styles.background} />
                 {renderPage()}
             </div>
 
-
-        </body>
+        </div>
+        <Footer/>
+        </>
     );
 }
